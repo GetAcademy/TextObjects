@@ -1,4 +1,4 @@
-﻿namespace Terje
+﻿namespace TextObjects
 {
     internal class TextEffect
     {
