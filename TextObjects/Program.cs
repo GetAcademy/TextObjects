@@ -2,32 +2,35 @@
 
 using TextObjects;
 
-// Pause til 10:32
+// Pause til 13:38
 
-// let myText = {};
-// myText = 'Hallo';
-//var myText = new TextEffect();
-//myText.Text = "Hallo";
+App2.Run();
 
-//var myTexts = new TextEffect[3];
-//myTexts[0] = myText1;
+Console.CursorTop = 20;
 
-var tea = new TextEffect("AAAAA", ConsoleColor.Red, 
-    5, 1, false, Case.Upper);
 /*
-   var tea = new TextEffect();
-   tea.Init("AAAAA", ConsoleColor.Red, 5, 1, false, Case.Upper); 
- */
+    I dag:
+    5. Fleksibel liste - Kommandostyrt program
+    6. Lese fra og skrive til JSON-fil
+    7. Static vs ikke-static
+    8. Ev. starte på innkapsling ELLER mer detaljert fleksibel liste
 
-var model = new Model
-{
-    CurrentUser = "terje",
-    Texts = new TextEffect[] {
-        new TextEffect("AAAAA",ConsoleColor.Red,5,1,false,Case.Upper),
-        new TextEffect("BBB",ConsoleColor.Blue,4,2,true,Case.Default),
-        new TextEffect("C",ConsoleColor.Green,3,3,false,Case.Lower),
-    }
-};
+ Terjes AI-tips: 
+   - https://www.deeplearning.ai/courses/machine-learning-specialization
+   - https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet
+   Ole Magnus Brastein
+   - https://www.youtube.com/ombrastein
+   - https://jeremy.fast.ai/
+
+    Tirsdag:
+    1. Hvordan ville vi modellert dette i JavaScript?
+    2. Hvordan oversetter vi det til C#?
+        - Hva med objekter inne i objekter?
+    3. Tegne opp
+    4. Flytte logikk
+        - funksjoner inne i en klasse (metoder)
+        - constructor
+ */
 
 /*
 var model = new Model
@@ -62,19 +65,7 @@ var model = new Model
 };
 */
 
-while (true)
-{
-    Console.Clear();
-    foreach (var text in model.Texts)
-    {
-        text.Show();
-        text.Flip();
-        text.Double();
-    }
-    Thread.Sleep(1000);
-}
 
-Console.CursorTop = 20;
 
 /*
   let model = {
@@ -109,23 +100,3 @@ Console.CursorTop = 20;
 
  */
 
-/*
-    En tekst på skjermen
-     - Posisjon
-     - Farge
-     - Invertert
-     - Flytte 
-     - Store eller små bokstaver
-
-    1. Hvordan ville vi modellert dette i JavaScript?
-    2. Hvordan oversetter vi det til C#?
-        - Hva med objekter inne i objekter?
-    3. Tegne opp
-    4. Flytte logikk
-        - funksjoner inne i en klasse (metoder)
-        - constructor
-    5. Fleksibel liste
-    6. Lese fra og skrive til JSON-fil
-    7. Static vs ikke-static
-
- */

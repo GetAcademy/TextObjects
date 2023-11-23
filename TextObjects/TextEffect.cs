@@ -2,12 +2,12 @@
 {
     internal class TextEffect
     {
-        public string Text;
-        public ConsoleColor Color;
-        public int Col;
-        public int Row;
-        public bool IsInverted;
-        public Case Case;
+        public string Text { get; set; }
+        public ConsoleColor Color { get; set; }
+        public int Col { get; set; }
+        public int Row { get; set; }
+        public bool IsInverted { get; set; }
+        public Case Case { get; set; }
 
         public TextEffect(string text, ConsoleColor color, int col, int row, bool isInverted, Case @case)
         {
@@ -17,6 +17,11 @@
             Row = row;
             IsInverted = isInverted;
             Case = @case;
+        }
+
+        public void SwapInverted()
+        {
+            IsInverted = !IsInverted;
         }
 
         public void Double()
