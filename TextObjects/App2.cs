@@ -74,8 +74,8 @@ namespace TextObjects
             return new List<TextEffect>
             {
                 new TextEffect("AAAAA", ConsoleColor.Red, 5, 1, false, Case.Upper),
-                new TextEffect("BBB", ConsoleColor.Blue, 4, 2, true, Case.Default),
                 new TextEffect("C", ConsoleColor.Green, 3, 3, false, Case.Lower),
+                new TextEffect("BBB", ConsoleColor.Blue, 4, 2, true, Case.Default),
             };
         }
 

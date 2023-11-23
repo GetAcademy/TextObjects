@@ -2,9 +2,7 @@
 
 using TextObjects;
 
-// Pause til 13:38
-
-App2.Run();
+FlexibleListDemo.Run();
 
 Console.CursorTop = 20;
 
